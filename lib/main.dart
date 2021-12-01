@@ -40,49 +40,47 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  width: 300,
+                  child: Divider(
+                    color: Colors.white,
+                    height: 10,
+
+                ),
+                ),
+                Card(
                   margin: EdgeInsets.all(30),
-                  padding: EdgeInsets.all(10),
                   color: Colors.black,
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      'katay@dynawrap.com.tr',
+                      style: TextStyle(
+                        fontSize: 16,
                         color: Colors.white,
                       ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Text(
-                        'katay@dynawrap.com.tr',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-                Container(
+                Card(
                   margin: EdgeInsets.symmetric(horizontal: 30),
-                  padding: EdgeInsets.all(10),
                   color: Colors.red,
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
-                        color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      '00 90 532 709 04 89',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
                       ),
-                      SizedBox(
-                        width: 15,
-                      ),
-                      Text(
-                        '00 90 532 709 04 89',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
+                    ),
+
+
                   ),
                 ),
               ],
